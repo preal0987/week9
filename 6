@@ -1,0 +1,12 @@
+clear; clc;
+t = 0:0.02:12*pi;
+x = (1 + 0.03*t).*cos(t);
+y = (1 + 0.03*t).*sin(t);
+z = 0.2*t;
+figure
+plot3(x, y, z)
+title('Parametric Curve')
+xlabel('x')
+ylabel('y')
+zlabel('z')
+grid on
