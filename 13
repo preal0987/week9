@@ -1,0 +1,19 @@
+clear; clc;
+t = 0:0.1:24;
+T = 15 + 10*sin(pi*t/12);
+figure
+plot(t, T)
+title('Temperature Change During a Day')
+xlabel('time (hour)')
+ylabel('Temperature')
+grid on
+[maxT, maxIdx] = max(T);
+[minT, minIdx] = min(T);
+t_max = t(maxIdx);
+t_min = t(minIdx);
+hold on
+plot(t_max, maxT, 'o')
+plot(t_min, minT, 'o')
+text(t_max, maxT, '  max')
+text(t_min, minT, '  min')
+hold off
