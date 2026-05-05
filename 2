@@ -1,0 +1,15 @@
+clear; clc;
+x = 1:1:50;
+y = 3.^x;
+subplot(1,2,1)
+plot(x, y)
+title('plot')
+xlabel('x')
+ylabel('y')
+grid on
+subplot(1,2,2)
+semilogy(x, y)
+title('semilogy')
+xlabel('x')
+ylabel('y')
+grid on
