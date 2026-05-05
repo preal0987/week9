@@ -1,0 +1,19 @@
+clear; clc;
+A = [2 -1;
+     3  4];
+B = [1 0 -2;
+     3 5  1];
+C = [6 -3  4;
+     15 14 -1];
+AX = C - B
+D = C - B;
+X = A\D;
+check = A*X + B;
+disp('C-B =')
+disp(D)
+disp('X =')
+disp(X)
+disp('AX+B =')
+disp(check)
+disp('C =')
+disp(C)
