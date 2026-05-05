@@ -1,0 +1,12 @@
+clear; clc;
+x = -4:0.1:4;
+y = -4:0.1:4;
+[X, Y] = meshgrid(x, y);
+Z = X.^2 - Y.^2;
+figure
+mesh(X, Y, Z)
+title('z = x^2 - y^2')
+xlabel('x')
+ylabel('y')
+zlabel('z')
+grid on
