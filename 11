@@ -1,0 +1,19 @@
+clear; clc;
+t = [0 1 2 3 4 5 6];
+C = [12 8.9 6.6 4.9 3.6 2.7 2.0];
+figure
+plot(t, C, 'o-')
+title('C(t)')
+xlabel('t')
+ylabel('C')
+grid on
+figure
+semilogy(t, C, 'o-')
+title('Semilog Plot')
+xlabel('t')
+ylabel('C')
+grid on
+L = log(C);
+slope = (L(end) - L(1)) / (t(end) - t(1));
+k = -slope;
+fprintf('k ≈ %.4f\n', k)
