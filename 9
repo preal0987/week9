@@ -1,0 +1,25 @@
+clear; clc;
+t = 0:0.01:25;
+y = exp(-0.15*t).*cos(4*t);
+
+figure
+plot(t, y)
+title('y(t) = e^{-0.15t}cos(4t)')
+xlabel('t')
+ylabel('y(t)')
+grid on
+
+figure
+y1=exp(-0.15*t);
+y2=-exp(-0.15*t);
+plotyy(t, y1, t, y2);
+title('Envelopes')
+xlabel('t')
+grid on
+
+figure
+semilogy(t, abs(y))
+title('|y(t)| in Semilog Scale')
+xlabel('t')
+ylabel('|y(t)|')
+grid on
