@@ -1,0 +1,18 @@
+clear; clc;
+n = 1:1:30;
+T1 = n;
+T2 = n.*log(n);
+T3 = n.^2;
+T4 = 2.^n;
+subplot(1,2,1)
+plot(n, T1, n, T2, n, T3, n, T4)
+title('plot')
+xlabel('n')
+ylabel('T(n)')
+grid on
+subplot(1,2,2)
+semilogy(n, T1, n, T2, n, T3, n, T4)
+title('semilogy')
+xlabel('n')
+ylabel('T(n)')
+grid on
