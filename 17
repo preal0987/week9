@@ -1,0 +1,15 @@
+clear; clc;
+X = [3 7 2 5;
+     5 9 4 6;
+     8 12 7 10;
+     10 15 9 13;
+     14 18 12 16];
+m = mean(X);
+Xc = X - m;
+S = Xc' * Xc;
+disp('열 평균 =')
+disp(m)
+disp('Xc =')
+disp(Xc)
+disp('S =')
+disp(S)
