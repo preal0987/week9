@@ -1,0 +1,15 @@
+clear; clc;
+t = 0:0.1:20;
+v = 5*exp(-0.2*t);
+subplot(1,2,1)
+plot(t, v)
+title('Velocity')
+xlabel('t')
+ylabel('v(t)')
+grid on
+subplot(1,2,2)
+semilogy(t, v)
+title('Velocity in Semilog Scale')
+xlabel('t')
+ylabel('v(t)')
+grid on
