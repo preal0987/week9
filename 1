@@ -1,0 +1,10 @@
+clear; clc;
+x = 0:0.05:6*pi;
+y = sin(x) + 0.5*cos(3*x);
+plot(x, y)
+xticks(0:pi:6*pi)
+xticklabels({'0','pi','2pi','3pi','4pi','5pi','6pi'})
+title('y = sin(x) + 0.5cos(3x)')
+xlabel('x')
+ylabel('y')
+grid on
